@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blong</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="nav-bar">
+  <div id="title">
+    Blog
+  </div>
+  <div id="status">
+    <a href="###">login</a>
+    /
+    sign up
+  </div>
+</div>
+<%= yield %>
+
+<style type="text/css" media="all">
+  #title {
+    font-size: 50px;
+    float: left;
+   }
+   #status {
+    font-size: 30px;
+    float: right;
+    margin: 20px 0 0 0;
+   }
+   #status a {
+     color: black;
+   }
+   #nav-bar {
+    float: left;
+    width: 100%;
+    background-color: gray;
+   }
+</style>
+
+</body>
+</html>
